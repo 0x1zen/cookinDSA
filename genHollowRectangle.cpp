@@ -8,15 +8,15 @@ int main(){
     for(int row=0;row<rowCount;row++){
         if(row==0 || row==rowCount-1){
        for(int col=0;col<colCount;col++){
-        cout<<"*";
+        cout<<"* ";
        }
     }
     else{
-        cout<<"*";
+        cout<<"* ";
         for(int col=0;col<colCount-2;col++){
-            cout<<" ";
+            cout<<"  ";
         }
-        cout<<"*";
+        cout<<"*" ;
     }
     cout<<endl;
 }
