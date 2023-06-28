@@ -1,4 +1,5 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 //  int n;
 //     cin>>n;
@@ -27,6 +28,51 @@ using namespace std;
 //     }
 // }
 int main(){
+
+vector<int>arr{-1,-1,2,5,6,8,-2,1,-10};
+int start=0;
+for(int i=0;i<arr.size();i++){
+    int element=arr[i+1];
+    for(int j=0;j<arr.size();j++){
+        if(arr[j]>arr[j+1]){
+            swap(arr[j],arr[j+1]);
+        }
+    }
+};
+for(int i=0;i<arr.size();i++){
+    cout<<arr[i]<<" ";
+}
+
+
+
+
+
+
+
+
+
+
+//         int start=0;
+//     int end=nums.size()-1;
+//     int i=0;
+//     while(i<=end){
+//         if(nums[i]==0){
+//             swap(nums[start],nums[i]);
+//             start++;
+//             i++;
+//         }
+//         else if(nums[i]==1){
+//             i++;
+//         }
+//         else if(nums[i]==2){
+//             swap(nums[i],nums[end]);
+//             end--;
+
+//         }
+//     }
+//     for(int i=0;i<nums.size();i++){
+//         cout<<nums[i];
+//     }
 // for(int i=0;i<6;i++){
 //     for(int j=0;j<i+1;j++){
 //         cout<<"*";
