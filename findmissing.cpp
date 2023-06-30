@@ -2,16 +2,31 @@
 #include<vector>
 #include<limits.h>
 using namespace std;
+int findMissing(int arr[],int n){
+    for(int i=0;i<n;i++){
+        int index=abs(arr[i]);
+        if(arr[index-1]>0){
+    //    arr[index-1]*=-1;
+    arr[index-1]=arr[index-1]*-1;
+        }
+    }
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+    // All positive are missing
+    for(int i=0;i<n;i++){
+        if(arr[i]>0){
+            cout<<i+1<<" ";
+        };
+    }
+}
 int main()
 {
-    vector<int>arr{1,2,3,5,6};
-    for(int i=0;i<arr.size();i++){
-        int element=arr[i+1];
-        for(int j=i+1;j<arr.size();j++){
-            if(arr[j]>element){
-                cout<<arr[i+1];
-            }
-        }
-    } 
+    int n;
+
+   int arr[]={1,3,5,3,4};
+   n=sizeof(arr)/sizeof(int);
+findMissing(arr,n);
  return 0;
 }
