@@ -36,18 +36,18 @@ int main()
     int dividend=22;
     int divisor=7;
     int ans=solve(dividend,divisor);
-    cout<<ans; 
-    // double step=0.1;
-    // double finalAns=ans;
-    // int precision;
-    // cin>>precision;
-    // for(int i=0;i<precision;i++){
-    //     for(double j=finalAns;j*j<=dividend;j=j+step){
-    //     finalAns=j;
-    //     }
-    //     step=step/10;
-    // }
-    // cout<<finalAns<<endl;
+    // cout<<ans; 
+    double step=0.1;
+    double finalAns=ans;
+    int precision;
+    cin>>precision;
+    for(int i=0;i<precision;i++){
+        for(double j=finalAns;j*divisor<=dividend;j=j+step){
+        finalAns=j;
+        }
+        step=step/10;
+    }
+    cout<<finalAns<<endl;
 
  return 0;
 }
