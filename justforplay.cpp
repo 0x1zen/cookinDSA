@@ -29,19 +29,19 @@ using namespace std;
 // }
 int main(){
 
-vector<int>arr{-1,-1,2,5,6,8,-2,1,-10};
-int start=0;
-for(int i=0;i<arr.size();i++){
-    int element=arr[i+1];
-    for(int j=0;j<arr.size();j++){
-        if(arr[j]>arr[j+1]){
-            swap(arr[j],arr[j+1]);
-        }
-    }
-};
-for(int i=0;i<arr.size();i++){
-    cout<<arr[i]<<" ";
-}
+// vector<int>arr{-1,-1,2,5,6,8,-2,1,-10};
+// int start=0;
+// for(int i=0;i<arr.size();i++){
+//     for(int j=0;j<arr.size();j++){
+//         if(arr[j]>arr[j+1]){
+//             swap(arr[j],arr[j+1]);
+//         }
+//     }
+// };
+// for(int i=0;i<arr.size();i++){
+//     cout<<arr[i]<<" ";
+// }
+// for(int i=0;i<n;i++)
 
 
 

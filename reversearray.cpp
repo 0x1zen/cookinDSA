@@ -6,6 +6,7 @@ int main()
     int size=6;
     int rev=size-1;
  for(int i=0;i<size;i--){
+   
     cout<<rev;
  }
  return 0;

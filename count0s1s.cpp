@@ -13,6 +13,7 @@ int main()
         if(arr[i]==1){
             numOne++;
         }
+        
     }
     cout<<"The number of zeros are "<<numZero<<endl;
     cout<<"The number of ones are "<<numOne<<endl;
