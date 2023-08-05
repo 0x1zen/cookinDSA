@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<limits.h>
 using namespace std;
 //  int n;
 //     cin>>n;
@@ -29,6 +30,8 @@ using namespace std;
 // }
 int main(){
 
+int ans=1/2;
+cout<<ans;
 // vector<int>arr{-1,-1,2,5,6,8,-2,1,-10};
 // int start=0;
 // for(int i=0;i<arr.size();i++){
