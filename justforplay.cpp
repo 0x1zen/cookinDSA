@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<limits.h>
+#include<set>
 using namespace std;
 //  int n;
 //     cin>>n;
@@ -28,10 +29,32 @@ using namespace std;
 //         return b;
 //     }
 // }
+
+
+
 int main(){
 
-int ans=1/2;
+vector<int>arr{12,16,22,30,35,39,42,45,48,50,53,55,56};
+int x=35;
+int start=0;
+int end=arr.size()-1;
+int ans=-1;
+while(start<=end){
+    int mid=start+(end-start)/2;
+    if(arr[mid]>=x){
+        ans=mid;
+        end=mid-1;
+    }
+    else if(x>arr[mid]){
+        start=mid+1;
+    }
+    else {
+        end=mid-1;
+    }
+}
 cout<<ans;
+
+
 // vector<int>arr{-1,-1,2,5,6,8,-2,1,-10};
 // int start=0;
 // for(int i=0;i<arr.size();i++){
