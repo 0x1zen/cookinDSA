@@ -49,10 +49,7 @@ while(start<=end){
         start=mid+1;
     }
     else {
-        end=mid-1;
-    }
-}
-cout<<ans;
+        end=mid
 
 
 // vector<int>arr{-1,-1,2,5,6,8,-2,1,-10};
