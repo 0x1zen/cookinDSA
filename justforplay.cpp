@@ -2,6 +2,8 @@
 #include<vector>
 #include<limits.h>
 #include<set>
+#include<string.h>
+#include<algorithm>
 using namespace std;
 //  int n;
 //     cin>>n;
@@ -30,26 +32,81 @@ using namespace std;
 //     }
 // }
 
-
-
+// int findLength( char name[]){
+//     int i=0;
+//     int length=0;
+//     while(name[i]!='\0'){
+//       length++;
+//       i++;
+//     }
+//     return length;
+// }
+// string findReverse(char name[],int size){
+//    int i=0;
+//   int  j=size-1;
+//     while(i<=j){
+//     swap(name[i],name[j]);
+//     i++;
+//     j--;
+//     }
+//     return name;
+// }
+string replaceBlanks(char name[],int size){
+    int i=0;
+    for(int i=0;i<size;i++){
+        if(name[i]==' '){
+            name[i]='@';
+        }
+    }
+    return name;
+}
 int main(){
 
-vector<int>arr{12,16,22,30,35,39,42,45,48,50,53,55,56};
-int x=35;
-int start=0;
-int end=arr.size()-1;
-int ans=-1;
-while(start<=end){
-    int mid=start+(end-start)/2;
-    if(arr[mid]>=x){
-        ans=mid;
-        end=mid-1;
-    }
-    else if(x>arr[mid]){
-        start=mid+1;
-    }
-    else {
-        end=mid
+
+char name[50];
+
+cin.getline(name,50);
+cout<<"initially "<<name<<endl;
+int size = strlen(name);
+string replace=replaceBlanks(name,size);
+cout<<"after "<<replace;
+// int value=(int)name[3];
+// cout<<value;
+
+
+//    const int arraySize = 5; // Change this to the desired array size
+// int myArray[arraySize];
+// // for (int i = 0; i < arraySize; ++i) {
+// //     cout << "Enter element " << i << ": ";
+// //     cin >> myArray[i];
+// // }
+// while(arraySize){
+//     cout << "Enter element " << i << ": ";
+//     cin >> myArray[i];
+// }
+// cout << "Entered elements: ";
+// for (int i = 0; i < arraySize; ++i) {
+//     cout << myArray[i] << " ";
+// }
+// cout << endl;
+
+
+// vector<int>arr{12,16,22,30,35,39,42,45,48,50,53,55,56};
+// int x=35;
+// int start=0;
+// int end=arr.size()-1;
+// int ans=-1;
+// while(start<=end){
+//     int mid=start+(end-start)/2;
+//     if(arr[mid]>=x){
+//         ans=mid;
+//         end=mid-1;
+//     }
+//     else if(x>arr[mid]){
+//         start=mid+1;
+//     }
+//     else {
+//         end=mid
 
 
 // vector<int>arr{-1,-1,2,5,6,8,-2,1,-10};
